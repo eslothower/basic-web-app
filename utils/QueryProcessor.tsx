@@ -1,4 +1,5 @@
 export default function QueryProcessor(query: string): string {
+  console.log("THIS IS ;alskdfj;lkja");
 
   if (query.includes("What is")) {
     var match = query.match(/\d+/g);
@@ -7,6 +8,5 @@ export default function QueryProcessor(query: string): string {
     var match = query.match(/\d+/g);    
     return (String(Math.max(Number(match[0]), Number(match[1]), Number(match[2]))));
   }
-  console.log("THIS IS ;alskdfj;lkja");
   return ";laskdjf";
 }
