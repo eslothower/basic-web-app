@@ -1,7 +1,7 @@
 export default function QueryProcessor(query: string): string {
   console.log("THIS IS CHICKEN");
 
-  if (query.includes("What is")) {
+  if (query.match(/\d+/g)) {
     var match = query.match(/\d+/g);
     return (String(match[1] + match[2]));
   } 
