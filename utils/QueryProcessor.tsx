@@ -5,8 +5,6 @@ export default function QueryProcessor(query: string): string {
   } else if (query.includes("Which of the following numbers is the largest: \d+, \d+, \d+?")){
     var match = query.match(/Which of the following numbers is the largest: ([0-9]*), ([0-9]*), ([0-9]*)?/);
     return (String(Math.max(Number(match[1]), Number(match[2]), Number(match[3]))));
-  } else if(query.includes()){
-
   }
 
   return "no";
