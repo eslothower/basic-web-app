@@ -9,5 +9,5 @@ export default function QueryProcessor(query: string): string {
 
   }
 
-  return "error";
+  return "no";
 }
