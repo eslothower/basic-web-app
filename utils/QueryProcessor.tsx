@@ -1,6 +1,6 @@
 export default function QueryProcessor(query: string): string {
-  if (query.includes("What is \d+ plus \d+?")) {
-    var match = query.match(/^What is ([0-9]*) plus ([0-9]*)\?$/);
+  if (query.includes("What is")) {
+    var match = query.match( /^What is \d+ plus \d+\?$/);
     return (String(match[0] + match[1]));
   } else if (query.includes("Which of the following numbers is the largest: \d+, \d+, \d+?")){
     var match = query.match(/Which of the following numbers is the largest: ([0-9]*), ([0-9]*), ([0-9]*)?/);
