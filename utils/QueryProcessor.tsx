@@ -4,7 +4,7 @@ export default function QueryProcessor(query: string): string {
   if (query.match(/^What is ([0-9]*) plus ([0-9]*)\?$/)) {
     var match = query.match(/\d+/g);
     if (match != null){
-      return (String(match[0] + match[1]));
+      return (String(Number(match[0]) + Number(match[1])));
     }
     
   } 
