@@ -1,7 +1,7 @@
 export default function QueryProcessor(query: string): string {
   console.log("THIS IS CHICKEN");
 
-  if (query.match(/\d+/g)) {
+  if (query.match(/^What is ([0-9]*) plus ([0-9]*)\?$/)) {
     var match = query.match(/\d+/g);
     return (String(match[1] + match[2]));
   } 
